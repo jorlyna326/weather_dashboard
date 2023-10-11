@@ -1,0 +1,39 @@
+@import url("https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBPBCldf1C-UFcQB3uYxxrV5cTh8er2bZo");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+body{
+    background: aliceblue;
+}
+
+ h1 {
+    background: #3037f0;
+    padding: 20px 0;
+    color: antiquewhite;
+    font-size: large;
+    text-align: center;
+}
+.container{
+    display: flex;
+    gap: 45px;
+    padding: 40px;
+}
+.weatherResults {
+    width: 550px;
+}
+.weatherResults Results {
+    width: 100%;
+height: 50px;
+outline: none;
+padding: 0 17px;
+font-size: larger;
+
+}
+.weatherInfo{
+    width: 100%;
+}
