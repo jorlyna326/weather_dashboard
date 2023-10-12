@@ -11,23 +11,29 @@ body{
     background: aliceblue;
 }
 
- h1 {
-    background: #3037f0;
+header {
+    background: #656af7;
     padding: 20px 0;
     color: antiquewhite;
-    font-size: large;
+    font-size: 1.75rem;
     text-align: center;
 }
-.container{
+.searchButton {
     display: flex;
-    gap: 45px;
-    padding: 40px;
+    justify-content: left;
 }
-.weatherResults {
+
+/* .info {
+    display: flexbox;
+    gap: 30px;
+    padding: 40px;
+    text-align:right;
+}
+.currentWeather {
     width: 550px;
 }
-.weatherResults Results {
-    width: 100%;
+.weatherResults results {
+width: 100%;
 height: 50px;
 outline: none;
 padding: 0 17px;
@@ -36,4 +42,4 @@ font-size: larger;
 }
 .weatherInfo{
     width: 100%;
-}
+} */
