@@ -5,86 +5,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Dashboard</title>
-
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-
+  <!-- style css -->
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-  <header> Weather Dashboard</header>
-  <div class="main">
-    <div class="search">
-      <div class="searchBar">
-        <h3>Search for a City</h3>
-        <input type="text" placeholder="Orlando">
-        <button class="searchButton"> Search</button>
-      </div>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
 
+  <main>
+
+    <section class="search col-3">
+      <form id="searchForm" class="weatherInput">
+        <div>
+          <label>Search for a City</label>
+          <input id="input" type="text" placeholder="Orlando">
+        </div>
+        <button type="submit" class="searchButton"> Search</button>
+      </form>
+      <hr>
       <div class="buttons">
-        <button class="rsearchButton"> result 1</button>
+        <!-- <button class="searchButton"> result 1</button>
         <button class="searchButton"> result 2</button>
         <button class="searchButton"> result 3</button>
         <button class="searchButton"> result 4</button>
         <button class="searchButton"> result 5</button>
         <button class="searchButton"> result 6</button>
         <button class="searchButton"> result 7</button>
-        <button class="searchButton"> result 8</button>
+        <button class="searchButton"> result 8</button> -->
       </div>
 
+    </section>
+
+
+    <section class="search_result col-9">
+
       <div class="todaysWeather" class="icon">
-        <h3>Todays Weather</h3>
-        <img src=" https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon"></h3>
+        <h3 id="cityName">Todays Weather</h3>
+        <img id="icon" src=" https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon"></h3>
 
         <p id="Temp">Temperature
         <p>
-        <p id="Temp">Wind
+        <p id="wind">Wind
         <p>
-        <p id="Temp">Humidity
+        <p id="humidity">Humidity
         <p>
       </div>
 
-      <div class="fivedayweather">
-        <h3>5 - Day Forecast<h3>
-
-            <h5>day one</h5>
+      <div class="fiveDayWeather">
+        <h3>5 - Day Forecast</h3>
+        <div class="display">
+          <div class=" card col-2 mx-1">
+            <h4>day one</h4>
             <img src=" https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon"><img src="" alt="">
             <p>Temperature</p>
             <p>Wind</p>
             <p>Humidity</p>
+          </div>
 
-            <h5>day two</h5>
+          <div class=" card col-2 mx-1">
+            <h4>day two</h4>
             <img src=" https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon"><img src="" alt="">
             <p>Temperature</p>
             <p>Wind</p>
             <p>Humidity</p>
+          </div>
 
-            <h5>day three</h5>
+          <div class="col-2 mx-1 card">
+            <h4>day three</h4>
             <img src=" https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon"><img src="" alt="">
             <p>Temperature</p>
             <p>Wind</p>
             <p>Humidity</p>
+          </div>
 
-            <h5>day four</h5>
+          <div class="col-2 mx-1 card">
+            <h4>day four</h4>
             <img src=" https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon"><img src="" alt="">
             <p>Temperature</p>
             <p>Wind</p>
             <p>Humidity</p>
+          </div>
 
-            <h5>day five</h5>
+          <div class="col-2 mx-1 card">
+            <h4>day five</h4>
             <img src=" https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon"><img src="" alt="">
             <p>Temperature</p>
             <p>Wind</p>
             <p>Humidity</p>
+          </div>
+
+        </div>
+
       </div>
-    </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-            <script src="./js/script.js"></script> -->
+    </section>
+  </main>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
-</html> -->
+</html>
