@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #656af7;
+    background: #335ebb;
     padding: 18px 0;
     color: antiquewhite;
     font-size: 1.75rem;
@@ -27,7 +27,7 @@ main {
 }
 
 .todaysWeather {
-    background-color: rgb(177, 177, 215);
+    background-color: rgb(149, 211, 236);  
     border-radius: 5px;
     padding: 20px 70px 20px 20px;
     justify-content: space-around;
@@ -35,7 +35,6 @@ main {
 
 .display {
     display: flex;
-    /*! this will put a border around the forecast box */
     /* border: 2px solid black; */
     flex-wrap: wrap;
 }
